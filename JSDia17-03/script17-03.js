@@ -172,7 +172,7 @@ console. log (idade);
 // console.log( 10 % 3); // retornar o resto 1
 
 // //OPERADOR POTENCIA
-// console.log (2 ** 3); // potencia eçevado a 3 - 2 * 2 * 2
+// console.log (2 ** 3); // potencia elevado a 3 - 2 * 2 * 2
 
 // ================================================================
 
