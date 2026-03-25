@@ -17,14 +17,20 @@ NÍVEL BÁSICO
     - Exiba a tabuada desse número de 1 a 10 usando um `for`.
     
         */
-        // let abc = (prompt("Escolha um número da sua preferência."));
-        // console.log(abc);
+        
+let tabuada = prompt("Digite um número para ver a tabuada:");
 
-        for(let tabuada= (prompt("Escolha um número.")); tabuada<=5; tabuada++);
-        console.log(tabuada);
+// Converte a entrada de texto para número
+tabuada = Number(tabuada);
 
-
-        /*
+// Gera e exibe a tabuada de 1 a 10
+for (let i = 1; i <= 10; i++) {
+    let resultado = tabuada * i;
+    console.log(`${tabuada} x ${i} = ${resultado}`);}
+      
+    
+    
+    /*
 3. **Soma dos primeiros N números naturais:**
     - Peça um número `N` ao usuário.
     - Use um `while` ou `for` para somar os números de `1` até `N`.
@@ -37,5 +43,25 @@ NÍVEL BÁSICO
             
             1 + 2 + 3 + 4 + 5 + 6 = 21
             */
+let numero = prompt("Digite um número N para somar os primeiros N números naturais:");
 
-            
+// Converte a entrada para número
+numero = Number(numero);
+
+// Inicializa a variável para armazenar a soma
+let soma = 0;
+let sequencia = "";  // Variável para armazenar a sequência dos números
+
+// Laço de repetição para somar os números de 1 até N
+for (let i = 1; i <= N; i++) {
+    soma += i;  // Soma os números
+    sequencia += i;  // Adiciona o número à sequência
+
+    // Adiciona o "+" se não for o último número
+    if (i < N) {
+        sequencia += " + ";
+    }
+}
+
+// Exibe a sequência e o resultado da soma
+console.log(`${sequencia} = ${soma}`);
